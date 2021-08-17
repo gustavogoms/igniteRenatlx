@@ -1,4 +1,4 @@
-import { CategoriesRepository } from "../../repositories/implementations/CategoryRepositories";
+import { CategoriesRepository } from "../../repositories/implementations/CategoriesRepositories";
 import { CreateCategoryController } from "./createCategoryController";
 import { CreateCategoryUseCase } from "./CreateCategoryUseCase";
 
