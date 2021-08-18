@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/share/yarn/bin/yarn.js typeorm
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js add tsrynge
 
 PATH: 
   /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/gustavo/Documentos/AndroidSDK/sdk/emulator:/home/gustavo/Documentos/AndroidSDK/sdk/tools:/home/gustavo/Documentos/AndroidSDK/sdk/tools/bin:/home/gustavo/Documentos/AndroidSDK/sdk/platform-tools:/home/gustavo/Documentos/AndroidSDK/sdk/emulator:/home/gustavo/Documentos/AndroidSDK/sdk/tools:/home/gustavo/Documentos/AndroidSDK/sdk/tools/bin:/home/gustavo/Documentos/AndroidSDK/sdk/platform-tools
@@ -14,12 +14,17 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/gustavo/Área de Trabalho/Ignite/nodeJs/rentalx/package.json: Unexpected token } in JSON at position 270
-      at JSON.parse (<anonymous>)
-      at /usr/share/yarn/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/usr/share/yarn/lib/cli.js:310:30)
-      at /usr/share/yarn/lib/cli.js:321:13
+  Error: https://registry.yarnpkg.com/tsrynge: Not found
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140749:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141721:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141643:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (internal/streams/readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
 
 npm manifest: 
   {
@@ -29,7 +34,7 @@ npm manifest:
     "license": "MIT",
     "scripts": {
       "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-      "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
+      "typeorm": "ts-node-dev ./node_modules/typeorm/cli"
   
     },
     "dependencies": {
